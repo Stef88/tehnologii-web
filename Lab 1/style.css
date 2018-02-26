@@ -1,0 +1,12 @@
+.form-error input {
+	border: 2px solid #ff0000;
+}
+
+.form-error::after {
+	display: block;
+	margin-top: 20px;
+	content: "Oups. Form's got error!!!";
+	color: #ff0000;
+	font-size: 18px;
+	font-weight: bold;
+}

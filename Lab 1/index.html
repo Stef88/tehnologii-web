@@ -1,18 +1,50 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Laborator 1</title>
-		<meta charset="utf-8">
-	</head>
-	<body>
-		<form action="/action_page.php">
-		  	First name:<br>
-		  	<input type="text" name="firstname" value="Mickey">
-		  	<br>
-		  	Last name:<br>
-		  	<input type="text" name="lastname" value="Mouse">
-		  	<br><br>
-		  	<input type="submit" value="Submit">
-		</form> 
-	</body>
+<html lang="en">
+    <head>
+        <title> Twitter </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section>
+            <ol>
+                <li>Follow your interests.</li>
+                <li>Hear what people are talking about.</li>
+                <li>Join the conversation.</li>
+            </ol>
+        </section>
+        <section>
+            <form action="server.php" method="POST">
+                <input type="text" placeholder="Phone, email, or username">
+                <input type="password" placeholder="Password">
+                <a href="#">Forgot password?</a>
+                <input type="submit" value="Log in">
+            </form>
+            <form class="form-error">
+                <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Twitter-icon.png" alt="Twitter bird">
+                <h1>See what’s happening in the world right now</h1>
+                <p>Join Twitter today.</p>
+                <input type="text" placeholder="Phone, email, or username">
+                <input type="password" placeholder="Password">
+                <input type="submit" value="Get started!">
+                <span>Have an account?</span><a href="#">Log in</a>    
+            </form>
+        </section>
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Help Center</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+                <span>&copy; 2018</span>
+            </nav>
+        </footer>
+    </body>
 </html>
