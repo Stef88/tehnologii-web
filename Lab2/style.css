@@ -1,0 +1,27 @@
+.slider {
+	white-space: nowrap;
+	width: 748px;
+	overflow: hidden;
+}
+
+.slider-image {
+	display: inline;
+}
+
+#first {
+	transform: translateX(0);
+	transition: all .3s;
+}
+
+#second {
+	transform: translateX(0);
+	transition: all .3s;
+}
+
+.slider.move #first{
+	transform: translateX(-100%);
+}
+
+.slider.move #second{
+	transform: translateX(-100%);
+}
