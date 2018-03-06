@@ -1,0 +1,41 @@
+body {
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+}
+
+
+
+.wrapper {
+	display: inline-block;
+	width: 500px;
+	margin: 0 auto;
+	border: 3px solid #000;
+}
+
+.wrapper img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.wrapper__details {
+	display: inline-block;
+	text-align: center;
+}
+
+.wrapper__details h4, 
+.wrapper__details p {
+	margin: 0;
+}
+
+.wrapper__text {
+	text-align: left;
+}
+
+footer {
+	text-align: right;
+	color: orange !important;
+}
