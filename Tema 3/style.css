@@ -1,0 +1,93 @@
+body {
+	height: 100vh;
+	background-image: url('img/wallpaper.jpg');
+	background-position: top;
+	background-size: cover;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+.ashketchum {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.ashketchum h1 {
+	background-color: #ff0000;
+	color: #fff;
+}
+
+.pokemon {
+	position: absolute;
+}
+
+.pokemon h2 {
+	min-width: 330px;
+	background-color: #8eec98;
+	font-size: 30px;
+	padding: 5px 0;
+}
+
+.pokemon--pikachu {
+	top: 30px;
+	left: 30px;
+}
+
+.pokemon--charmander {
+	top: 30px;
+	right: 30px;
+}
+
+.pokemon--squirtle {
+	bottom: 30px;
+	left: 30px;
+}
+
+.pokemon--bulbasaur {
+	bottom: 30px;
+	right: 50px;
+}
+
+.pokemon__description {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	transition: all .3s;
+	display: flex;
+	justify-content: space-around;
+}
+
+.pokemon__description img {
+	width: 80px;
+	height: 80px;
+}
+
+.pokemon__text {
+	font-size: 22px;
+	color: #fff;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+/*Animations*/
+
+.pokemon:hover .pokemon__description {	
+	opacity: 1;
+}
+
+.pokemon:hover .pokemon__description--up {
+	transform: translateY(70px);
+}
+
+.pokemon:hover .pokemon__description--down {
+	transform: translateY(-65px);
+	opacity: 1;
+}
+
+
