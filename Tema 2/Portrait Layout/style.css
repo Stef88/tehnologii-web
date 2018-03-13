@@ -24,3 +24,21 @@ body {
 .container--3quarters {
   height: calc(75vh - 20px);
 }
+
+@media screen and (max-height: 500px) {
+  body {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .container {
+    width: calc((100vw / 7) - 20px); 
+  }
+
+  .container--quarter,
+  .container--half,
+  .container--3quarters {
+    height: calc(100vh - 20px); 
+  }
+}
