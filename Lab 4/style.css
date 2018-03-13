@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+	overflow-y: hidden;
+}
+
+
+.header {
+	background-color: #000;
+	padding: 10px 0;
+}
+
+.header button {
+	color: #fff;
+	cursor: pointer;
+	padding: 5px;
+	background-color: transparent;
+	margin: 0 0 0 20px;
+	border: 1px solid #fff;
+}
+
+.menu {
+	background-color: #000;
+	color: #fff;
+	margin: 0; 
+	display: inline-block;
+	height: 100vh;
+	transform: translateX(-100%);
+	transition: all .3s;
+}
+
+.menu--open {
+	transform: translateX(0);
+}
+
+.menu .menu__item {
+	padding: 10px 0;
+	margin: 0 30px 0 10px;
+	transition: all .3s;
+}
+
+
+@media screen and (max-width: 400px) {
+	.menu--open {
+		width: 100vw;
+	}
+}
